@@ -408,7 +408,7 @@ POST   /api/tickets/{id}/assign  - Assign to employee
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### **Error: "Column not found"**
 ```bash

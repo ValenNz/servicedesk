@@ -22,7 +22,7 @@ Proyek ini terdiri dari tiga bagian utama:
 └── README.md                   # Panduan setup ini
 ```
 
-## ⚙️ Prasyarat (Prerequisites)
+##  Prasyarat (Prerequisites)
 
 Pastikan Anda telah menginstal:
 - [Node.js](https://nodejs.org/) (versi 18.x atau lebih baru)
@@ -64,7 +64,7 @@ npm install
 
 ---
 
-## ▶ Cara Menjalankan Aplikasi
+##  Cara Menjalankan Aplikasi
 
 Anda perlu menjalankan **3 proses secara bersamaan** di 3 terminal yang berbeda:
 
