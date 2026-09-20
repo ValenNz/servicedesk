@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --primary-red: #dc2626;
+  --secondary-red: #b91c1c;
+  --light-red: #fee2e2;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-red-100 hover:bg-red-200 text-red-700 font-semibold py-2 px-4 rounded-lg transition duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent;
+  }
+}

@@ -1,0 +1,792 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "employee",
+      "activeTickets": 5
+    },
+    {
+      "id": "2",
+      "name": "employee 2",
+      "activeTickets": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Network test",
+      "description": "Network related issues",
+      "ticketCount": 15
+    },
+    {
+      "id": "2",
+      "name": "Software",
+      "description": "Software installation & issues",
+      "ticketCount": 23
+    },
+    {
+      "id": "3",
+      "name": "Hardware dc",
+      "description": "Hardware problems",
+      "ticketCount": 12
+    },
+    {
+      "id": "4",
+      "name": "Access & Account",
+      "description": "Account access issues",
+      "ticketCount": 8
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "user",
+      "email": "user@email.com",
+      "password": "password",
+      "role": "user",
+      "status": "Active"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@email.com",
+      "password": "password",
+      "role": "user",
+      "status": "Active"
+    },
+    {
+      "id": "3",
+      "name": "employee",
+      "email": "employee1@servicedesk.com",
+      "password": "password",
+      "role": "employee",
+      "status": "Active"
+    },
+    {
+      "id": "4",
+      "name": "employee 2",
+      "email": "employee2@servicedesk.com",
+      "password": "password",
+      "role": "employee",
+      "status": "Active"
+    },
+    {
+      "id": "5",
+      "name": "Admin User test rere",
+      "email": "admin@servicedesk.com",
+      "password": "password",
+      "role": "admin",
+      "status": "Active",
+      "phone": ""
+    },
+    {
+      "id": "6",
+      "name": "Alice Brown",
+      "email": "alice@email.com",
+      "password": "password",
+      "role": "user",
+      "status": "Active"
+    },
+    {
+      "id": "7",
+      "name": "Charlie Davis",
+      "email": "charlie@email.com",
+      "password": "password",
+      "role": "user",
+      "status": "Inactive"
+    },
+    {
+      "id": "8",
+      "name": "Diana Evans",
+      "email": "diana@email.com",
+      "password": "password",
+      "role": "user",
+      "status": "Active"
+    },
+    {
+      "id": "9",
+      "name": "Regular User sd sdsdsd",
+      "email": "user@google.com",
+      "password": "password",
+      "role": "user",
+      "status": "Active"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "TKT-003",
+      "title": "Software installation request",
+      "description": "Need to install Adobe Photoshop",
+      "category": "Software",
+      "priority": "High",
+      "status": "Closed",
+      "createdBy": "Bob Wilson",
+      "assignedTo": "employee 2",
+      "createdAt": "2024-01-14 14:00:00",
+      "updatedAt": "2026-09-20 02:19:58",
+      "timeAgo": "1 day ago",
+      "comments": [
+        {
+          "author": "employee 2",
+          "text": "Software has been installed successfully.",
+          "time": "5 hours ago"
+        },
+        {
+          "author": "Admin User",
+          "text": "test",
+          "time": "Just now",
+          "attachment": null
+        },
+        {
+          "author": "Admin User",
+          "text": "halo sayanagg",
+          "time": "Just now",
+          "attachment": null
+        },
+        {
+          "author": "Admin User",
+          "text": "haloo\n",
+          "time": "Just now",
+          "attachment": null
+        }
+      ],
+      "file": {
+        "name": "installation-guide.pdf",
+        "size": "1.2 MB",
+        "type": "application/pdf",
+        "url": "/dummy/dummy-pdf.pdf"
+      },
+      "attachments": [],
+      "validated": false
+    },
+    {
+      "id": "TKT-004",
+      "title": "Printer not responding",
+      "description": "Office printer is not printing any documents",
+      "category": "Hardware",
+      "priority": "Medium",
+      "status": "Open",
+      "createdBy": "Alice Brown",
+      "assignedTo": null,
+      "createdAt": "2024-01-14 11:00:00",
+      "updatedAt": "2024-01-14 11:00:00",
+      "timeAgo": "1 day ago",
+      "comments": [],
+      "file": null,
+      "attachments": []
+    },
+    {
+      "id": "TKT-005",
+      "title": "VPN connection failed",
+      "description": "Cannot connect to company VPN from home",
+      "category": "Network",
+      "priority": "High",
+      "status": "In Progress",
+      "createdBy": "Charlie Davis",
+      "assignedTo": "employee",
+      "createdAt": "2024-01-14 10:00:00",
+      "updatedAt": "2024-01-14 15:00:00",
+      "timeAgo": "1 day ago",
+      "comments": [
+        {
+          "author": "employee",
+          "text": "Checking VPN server configuration.",
+          "time": "12 hours ago"
+        }
+      ],
+      "file": {
+        "name": "vpn-error.png",
+        "size": "189.5 KB",
+        "type": "image/png",
+        "url": "/dummy/dummy-image.png"
+      },
+      "attachments": []
+    },
+    {
+      "id": "TKT-006",
+      "title": "Password reset request",
+      "description": "Forgot password and need to reset it",
+      "category": "Access & Account",
+      "priority": "Low",
+      "status": "Resolved",
+      "createdBy": "Diana Evans",
+      "assignedTo": "employee 2",
+      "createdAt": "2024-01-13 16:00:00",
+      "updatedAt": "2024-01-14 09:00:00",
+      "timeAgo": "2 days ago",
+      "comments": [],
+      "file": null,
+      "attachments": []
+    },
+    {
+      "id": "TKT-007",
+      "title": "Monitor not displaying",
+      "description": "Second monitor is not showing any output",
+      "category": "Hardware",
+      "priority": "Medium",
+      "status": "Closed",
+      "createdBy": "Frank Garcia",
+      "assignedTo": "employee",
+      "createdAt": "2024-01-13 14:00:00",
+      "updatedAt": "2024-01-14 11:00:00",
+      "timeAgo": "2 days ago",
+      "comments": [
+        {
+          "author": "employee",
+          "text": "Cable replaced. Monitor working now.",
+          "time": "1 day ago"
+        }
+      ],
+      "file": null,
+      "attachments": [
+        {
+          "name": "repair-documentation.pdf",
+          "size": "856 KB",
+          "type": "application/pdf",
+          "url": "/dummy/dummy-pdf.pdf"
+        }
+      ]
+    },
+    {
+      "id": "TKT-008",
+      "title": "Microsoft Office license expired",
+      "description": "Office 365 license needs renewal",
+      "category": "Software",
+      "priority": "High",
+      "status": "Open",
+      "createdBy": "Grace Harris",
+      "assignedTo": null,
+      "createdAt": "2024-01-13 09:00:00",
+      "updatedAt": "2024-01-13 09:00:00",
+      "timeAgo": "2 days ago",
+      "comments": [],
+      "file": {
+        "name": "license-error.png",
+        "size": "312.7 KB",
+        "type": "image/png",
+        "url": "/dummy/dummy-image.png"
+      },
+      "attachments": []
+    },
+    {
+      "id": "TKT-009",
+      "title": "WiFi not connecting in meeting room",
+      "description": "Meeting room B has no WiFi access",
+      "category": "Network",
+      "priority": "High",
+      "status": "In Progress",
+      "createdBy": "Henry Irving",
+      "assignedTo": "employee 2",
+      "createdAt": "2024-01-12 15:00:00",
+      "updatedAt": "2024-01-13 10:00:00",
+      "timeAgo": "3 days ago",
+      "comments": [
+        {
+          "author": "employee 2",
+          "text": "Router rebooted, monitoring stability.",
+          "time": "2 days ago"
+        }
+      ],
+      "file": null,
+      "attachments": [
+        {
+          "name": "network-log.txt",
+          "size": "12.5 KB",
+          "type": "text/plain",
+          "url": "/dummy/dummy-pdf.pdf"
+        }
+      ]
+    },
+    {
+      "id": "TKT-011",
+      "title": "Laptop battery draining fast",
+      "description": "Battery life reduced significantly",
+      "category": "Hardware",
+      "priority": "Low",
+      "status": "Open",
+      "createdBy": "Jack King",
+      "assignedTo": null,
+      "createdAt": "2024-01-12 08:00:00",
+      "updatedAt": "2024-01-12 08:00:00",
+      "timeAgo": "3 days ago",
+      "comments": [],
+      "file": null,
+      "attachments": []
+    },
+    {
+      "id": "TKT-012",
+      "title": "Zoom not working properly",
+      "description": "Zoom crashes during video calls",
+      "category": "Software",
+      "priority": "Medium",
+      "status": "In Progress",
+      "createdBy": "Karen Lee",
+      "assignedTo": "employee 2",
+      "createdAt": "2024-01-11 14:00:00",
+      "updatedAt": "2024-01-12 09:00:00",
+      "timeAgo": "4 days ago",
+      "comments": [
+        {
+          "author": "Karen Lee",
+          "text": "Still happening after reinstall.",
+          "time": "3 days ago"
+        }
+      ],
+      "file": {
+        "name": "zoom-crash.png",
+        "size": "423.1 KB",
+        "type": "image/png",
+        "url": "/dummy/dummy-image.png"
+      },
+      "attachments": []
+    },
+    {
+      "id": "TKT-013",
+      "title": "File server access denied",
+      "description": "Cannot access shared drive folder",
+      "category": "Access & Account",
+      "priority": "High",
+      "status": "Resolved",
+      "createdBy": "Leo Martinez",
+      "assignedTo": "employee",
+      "createdAt": "2024-01-11 10:00:00",
+      "updatedAt": "2024-01-11 15:00:00",
+      "timeAgo": "4 days ago",
+      "comments": [],
+      "file": null,
+      "attachments": []
+    },
+    {
+      "id": "TKT-014",
+      "title": "Keyboard keys not working",
+      "description": "Several keys on keyboard are unresponsive",
+      "category": "Hardware",
+      "priority": "Medium",
+      "status": "Closed",
+      "createdBy": "Mia Nelson",
+      "assignedTo": "employee 2",
+      "createdAt": "2024-01-10 16:00:00",
+      "updatedAt": "2024-01-11 10:00:00",
+      "timeAgo": "5 days ago",
+      "comments": [
+        {
+          "author": "employee 2",
+          "text": "Keyboard replaced with new one.",
+          "time": "4 days ago"
+        }
+      ],
+      "file": null,
+      "attachments": []
+    },
+    {
+      "id": "TKT-015",
+      "title": "Antivirus update failed",
+      "description": "Antivirus cannot download latest definitions",
+      "category": "Software",
+      "priority": "High",
+      "status": "Open",
+      "createdBy": "Noah Owen",
+      "assignedTo": null,
+      "createdAt": "2024-01-10 13:00:00",
+      "updatedAt": "2024-01-10 13:00:00",
+      "timeAgo": "5 days ago",
+      "comments": [],
+      "file": {
+        "name": "antivirus-error.pdf",
+        "size": "567.8 KB",
+        "type": "application/pdf",
+        "url": "/dummy/dummy-pdf.pdf"
+      },
+      "attachments": []
+    },
+    {
+      "id": "TKT-016",
+      "title": "Slow internet on 3rd floor",
+      "description": "Internet speed is very slow on 3rd floor",
+      "category": "Network",
+      "priority": "Medium",
+      "status": "In Progress",
+      "createdBy": "Olivia Parker",
+      "assignedTo": "employee",
+      "createdAt": "2024-01-10 09:00:00",
+      "updatedAt": "2024-01-10 14:00:00",
+      "timeAgo": "5 days ago",
+      "comments": [],
+      "file": null,
+      "attachments": []
+    },
+    {
+      "id": "TKT-017",
+      "title": "Request for dual monitor setup",
+      "description": "Need second monitor for productivity",
+      "category": "Hardware",
+      "priority": "Low",
+      "status": "Resolved",
+      "createdBy": "Paul Quinn",
+      "assignedTo": "employee 2",
+      "createdAt": "2024-01-09 15:00:00",
+      "updatedAt": "2024-01-10 11:00:00",
+      "timeAgo": "6 days ago",
+      "comments": [],
+      "file": null,
+      "attachments": []
+    },
+    {
+      "id": "TKT-018",
+      "title": "Cannot install Windows update",
+      "description": "Windows update stuck at 0%",
+      "category": "Software",
+      "priority": "Medium",
+      "status": "Open",
+      "createdBy": "Quinn Roberts",
+      "assignedTo": null,
+      "createdAt": "2024-01-09 11:00:00",
+      "updatedAt": "2024-01-09 11:00:00",
+      "timeAgo": "6 days ago",
+      "comments": [],
+      "file": {
+        "name": "windows-update-error.png",
+        "size": "278.4 KB",
+        "type": "image/png",
+        "url": "/dummy/dummy-image.png"
+      },
+      "attachments": []
+    },
+    {
+      "id": "TKT-019",
+      "title": "Email signature not updating",
+      "description": "New email signature not appearing in sent emails",
+      "category": "Access & Account",
+      "priority": "Low",
+      "status": "Closed",
+      "createdBy": "Rachel Scott",
+      "assignedTo": "employee",
+      "createdAt": "2024-01-08 14:00:00",
+      "updatedAt": "2024-01-09 10:00:00",
+      "timeAgo": "1 week ago",
+      "comments": [
+        {
+          "author": "employee",
+          "text": "Cache cleared, signature updated.",
+          "time": "6 days ago"
+        }
+      ],
+      "file": null,
+      "attachments": []
+    },
+    {
+      "id": "TKT-020",
+      "title": "Webcam not detected",
+      "description": "Webcam not recognized by system",
+      "category": "Hardware",
+      "priority": "Medium",
+      "status": "In Progress",
+      "createdBy": "Sam Turner",
+      "assignedTo": "employee 2",
+      "createdAt": "2024-01-08 10:00:00",
+      "updatedAt": "2024-01-09 08:00:00",
+      "timeAgo": "1 week ago",
+      "comments": [],
+      "file": null,
+      "attachments": []
+    },
+    {
+      "id": "TKT-021",
+      "title": "Slack notifications not working",
+      "description": "Not receiving Slack notifications on desktop",
+      "category": "Software",
+      "priority": "Low",
+      "status": "Resolved",
+      "createdBy": "Tina Upton",
+      "assignedTo": "employee",
+      "createdAt": "2024-01-07 16:00:00",
+      "updatedAt": "2024-01-08 09:00:00",
+      "timeAgo": "1 week ago",
+      "comments": [],
+      "file": null,
+      "attachments": []
+    },
+    {
+      "id": "TKT-022",
+      "title": "DNS resolution issues",
+      "description": "Some websites cannot be resolved",
+      "category": "Network",
+      "priority": "High",
+      "status": "Resolved",
+      "createdBy": "Uma Vance",
+      "assignedTo": "employee 2",
+      "createdAt": "2024-01-07 12:00:00",
+      "updatedAt": "2024-01-07 17:00:00",
+      "timeAgo": "1 week ago",
+      "comments": [
+        {
+          "author": "employee 2",
+          "text": "DNS server flushed and updated.",
+          "time": "1 week ago"
+        }
+      ],
+      "file": null,
+      "attachments": [
+        {
+          "name": "dns-config.pdf",
+          "size": "234.9 KB",
+          "type": "application/pdf",
+          "url": "/dummy/dummy-pdf.pdf"
+        }
+      ]
+    },
+    {
+      "id": "TKT-023",
+      "title": "Request to disable USB ports",
+      "description": "Security request to disable USB on specific PCs",
+      "category": "Access & Account",
+      "priority": "Medium",
+      "status": "Open",
+      "createdBy": "Victor Wang",
+      "assignedTo": null,
+      "createdAt": "2024-01-06 14:00:00",
+      "updatedAt": "2024-01-06 14:00:00",
+      "timeAgo": "1 week ago",
+      "comments": [],
+      "file": {
+        "name": "security-policy.pdf",
+        "size": "1.5 MB",
+        "type": "application/pdf",
+        "url": "/dummy/dummy-pdf.pdf"
+      },
+      "attachments": []
+    },
+    {
+      "id": "TKT-024",
+      "title": "Mouse cursor lagging",
+      "description": "Mouse cursor is very laggy and unresponsive",
+      "category": "Hardware",
+      "priority": "Low",
+      "status": "Closed",
+      "createdBy": "Wendy Xavier",
+      "assignedTo": "employee",
+      "createdAt": "2024-01-06 10:00:00",
+      "updatedAt": "2024-01-07 09:00:00",
+      "timeAgo": "1 week ago",
+      "comments": [],
+      "file": null,
+      "attachments": []
+    },
+    {
+      "id": "TKT-025",
+      "title": "Adobe Reader crashing on open",
+      "description": "Adobe Reader crashes immediately when opening PDF",
+      "category": "Software",
+      "priority": "Medium",
+      "status": "In Progress",
+      "createdBy": "Xander Young",
+      "assignedTo": "employee 2",
+      "createdAt": "2024-01-05 15:00:00",
+      "updatedAt": "2024-01-06 11:00:00",
+      "timeAgo": "2 weeks ago",
+      "comments": [
+        {
+          "author": "Xander Young",
+          "text": "Tried reinstalling, still crashing.",
+          "time": "1 week ago"
+        }
+      ],
+      "file": {
+        "name": "crash-screenshot.png",
+        "size": "389.2 KB",
+        "type": "image/png",
+        "url": "/dummy/dummy-image.png"
+      },
+      "attachments": []
+    },
+    {
+      "id": "9R_goZbJorc",
+      "title": "testssfdf",
+      "description": "wwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "category": "Network test",
+      "priority": "Low",
+      "file": {
+        "name": "karina.jpg",
+        "size": "1922.7 KB",
+        "type": "image/jpeg",
+        "url": "blob:http://localhost:5173/7d1deeb3-d0b1-43f1-9d7e-c0d71ec5b59c"
+      },
+      "createdBy": "Unknown User",
+      "assignedTo": null,
+      "status": "Open",
+      "comments": [],
+      "attachments": [],
+      "createdAt": "2026-09-20 03:47:02",
+      "updatedAt": "2026-09-20 03:47:02",
+      "timeAgo": "Just now"
+    },
+    {
+      "id": "KtqPWwhCc-E",
+      "title": "testwewewe",
+      "description": "wewwewewewewewe",
+      "category": "Network test",
+      "priority": "Low",
+      "file": {
+        "name": "karina.jpg",
+        "size": "1922.7 KB",
+        "type": "image/jpeg",
+        "url": "blob:http://localhost:5173/4469e5ec-85d5-4bb3-a411-0ceb3c0ecefe"
+      },
+      "createdBy": "Unknown User",
+      "assignedTo": null,
+      "status": "Open",
+      "comments": [],
+      "attachments": [],
+      "createdAt": "2026-09-20 03:58:33",
+      "updatedAt": "2026-09-20 03:58:33",
+      "timeAgo": "Just now"
+    },
+    {
+      "id": "DrzDo2eGH6s",
+      "title": "sdsdfdsfdfsdf",
+      "description": "sdfdfsdfdsf",
+      "category": "Network test",
+      "priority": "Low",
+      "file": {
+        "name": "karina.jpg",
+        "size": "1922.7 KB",
+        "type": "image/jpeg",
+        "url": "blob:http://localhost:5173/965ab6cd-f7d4-4cc1-a8e4-ca937910a586"
+      },
+      "createdBy": "Unknown User",
+      "assignedTo": null,
+      "status": "Open",
+      "comments": [],
+      "attachments": [],
+      "createdAt": "2026-09-20 03:59:18",
+      "updatedAt": "2026-09-20 03:59:18",
+      "timeAgo": "Just now"
+    },
+    {
+      "id": "oPnHMPAzl5M",
+      "title": "sdsdsd",
+      "description": "sdsssssssssssssssssssssss",
+      "category": "Network test",
+      "priority": "Low",
+      "file": {
+        "name": "karina.jpg",
+        "size": "1922.7 KB",
+        "type": "image/jpeg",
+        "url": "blob:http://localhost:5173/1351cbfc-bc95-4750-9e1f-ea49fd6425fa"
+      },
+      "createdBy": "Regular User sd sdsdsd",
+      "assignedTo": null,
+      "status": "Open",
+      "comments": [],
+      "attachments": [],
+      "createdAt": "2026-09-20 04:03:31",
+      "updatedAt": "2026-09-20 04:03:31",
+      "timeAgo": "Just now"
+    }
+  ],
+  "activities": [
+    {
+      "id": "SrEBrVBcGKQ",
+      "timestamp": "2026-09-20 01:32:28",
+      "type": "ticket_deleted",
+      "description": "Deleted ticket TKT-001",
+      "user": "Admin User",
+      "details": {
+        "ticket": "TKT-001"
+      }
+    },
+    {
+      "id": "Yxzx2NuZiyI",
+      "timestamp": "2026-09-20 01:32:33",
+      "type": "ticket_deleted",
+      "description": "Deleted ticket TKT-002",
+      "user": "Admin User",
+      "details": {
+        "ticket": "TKT-002"
+      }
+    },
+    {
+      "id": "eN6dvZmZr4I",
+      "timestamp": "2026-09-20 01:38:40",
+      "type": "ticket_assigned",
+      "description": "Assigned ticket TKT-003 to Unassigned",
+      "user": "Admin User",
+      "details": {
+        "ticket": "TKT-003"
+      }
+    },
+    {
+      "id": "DrtzBy83BPE",
+      "timestamp": "2026-09-20 01:39:24",
+      "type": "status_changed",
+      "description": "Changed status of ticket TKT-003 from Resolved to Closed",
+      "user": "Admin User",
+      "details": {
+        "ticket": "TKT-003",
+        "from": "Resolved",
+        "to": "Closed"
+      }
+    },
+    {
+      "id": "4ArYXegk7-0",
+      "timestamp": "2026-09-20 02:16:26",
+      "type": "category_deleted",
+      "description": "Deleted category: ssd",
+      "user": "Admin User",
+      "details": {
+        "category": "ssd"
+      }
+    },
+    {
+      "id": "iYpyZdiLRug",
+      "timestamp": "2026-09-20 02:19:46",
+      "type": "ticket_assigned",
+      "description": "Assigned ticket TKT-003 to Unassigned",
+      "user": "Admin User",
+      "details": {
+        "ticket": "TKT-003"
+      }
+    },
+    {
+      "id": "byf1RbILH_k",
+      "timestamp": "2026-09-20 02:19:58",
+      "type": "ticket_assigned",
+      "description": "Assigned ticket TKT-003 to Unassigned",
+      "user": "Admin User",
+      "details": {
+        "ticket": "TKT-003"
+      }
+    },
+    {
+      "id": "Lf_1Y7ZABoE",
+      "timestamp": "2026-09-20 03:58:33",
+      "type": "ticket_created",
+      "description": "Created a new ticket: testwewewe",
+      "user": "Unknown User",
+      "details": {
+        "ticket": "TKT-026"
+      }
+    },
+    {
+      "id": "SeI19XKXWq0",
+      "timestamp": "2026-09-20 03:59:18",
+      "type": "ticket_created",
+      "description": "Created a new ticket: sdsdfdsfdfsdf",
+      "user": "Unknown User",
+      "details": {
+        "ticket": "TKT-026"
+      }
+    },
+    {
+      "id": "MDB9w2gHFfw",
+      "timestamp": "2026-09-20 04:03:31",
+      "type": "ticket_created",
+      "description": "Created a new ticket: sdsdsd",
+      "user": "Regular User sd sdsdsd",
+      "details": {
+        "ticket": "TKT-NET-260920-001"
+      }
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
