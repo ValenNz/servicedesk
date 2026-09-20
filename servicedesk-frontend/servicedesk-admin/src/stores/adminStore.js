@@ -59,7 +59,7 @@ export const useAdminStore = defineStore('admin', () => {
       ...activityData
     }
     
-    console.log('📝 [DEBUG] Mencoba menyimpan activity:', newActivity)
+    console.log('[DEBUG] Mencoba menyimpan activity:', newActivity)
     
     try {
       const res = await fetch(`${API_URL}/activities`, {
@@ -71,13 +71,13 @@ export const useAdminStore = defineStore('admin', () => {
       if (res.ok) {
         const created = await res.json()
         activities.value.unshift(created)
-        console.log('✅ [DEBUG] Activity berhasil disimpan ke database!')
+        console.log('[DEBUG] Activity berhasil disimpan ke database!')
       } else {
         const errorText = await res.text()
-        console.error('❌ [DEBUG] Gagal menyimpan activity. Status:', res.status, 'Error:', errorText)
+        console.error('[DEBUG] Gagal menyimpan activity. Status:', res.status, 'Error:', errorText)
       }
     } catch (error) {
-      console.error('❌ [DEBUG] Error network saat menyimpan activity:', error)
+      console.error('[DEBUG] Error network saat menyimpan activity:', error)
     }
     
     return newActivity
@@ -135,7 +135,7 @@ export const useAdminStore = defineStore('admin', () => {
   async function updateTicket(id, updates) {
     const oldTicket = tickets.value.find(t => String(t.id) === String(id))
     
-    console.log('🔄 [DEBUG] Updating ticket. ID:', id, 'Old Ticket:', oldTicket, 'Updates:', updates)
+    console.log('[DEBUG] Updating ticket. ID:', id, 'Old Ticket:', oldTicket, 'Updates:', updates)
 
     const res = await fetch(`${API_URL}/tickets/${id}`, {
       method: 'PATCH',
@@ -155,7 +155,7 @@ export const useAdminStore = defineStore('admin', () => {
     const userName = currentUser.value?.name || 'Unknown User'
     if (oldTicket) {
       if (String(updates.assignedTo) !== String(oldTicket.assignedTo)) {
-        console.log('📌 [DEBUG] Trigger: assignedTo berubah')
+        console.log('[DEBUG] Trigger: assignedTo berubah')
         await addActivity({
           type: 'ticket_assigned',
           description: `Assigned ticket ${id} to ${updates.assignedTo || 'Unassigned'}`,
@@ -164,7 +164,7 @@ export const useAdminStore = defineStore('admin', () => {
         })
       }
       if (updates.status && String(updates.status) !== String(oldTicket.status)) {
-        console.log('📌 [DEBUG] Trigger: status berubah')
+        console.log('[DEBUG] Trigger: status berubah')
         await addActivity({
           type: 'status_changed',
           description: `Changed status of ticket ${id} from ${oldTicket.status} to ${updates.status}`,
@@ -173,7 +173,7 @@ export const useAdminStore = defineStore('admin', () => {
         })
       }
       if (updates.comments && updates.comments.length > (oldTicket.comments?.length || 0)) {
-        console.log('📌 [DEBUG] Trigger: comment bertambah')
+        console.log('[DEBUG] Trigger: comment bertambah')
         await addActivity({
           type: 'comment_added',
           description: `Added a comment on ticket ${id}`,
@@ -182,7 +182,7 @@ export const useAdminStore = defineStore('admin', () => {
         })
       }
     } else {
-      console.warn('⚠️ [DEBUG] oldTicket tidak ditemukan untuk ID:', id)
+      console.warn('[DEBUG] oldTicket tidak ditemukan untuk ID:', id)
     }
     
     return true

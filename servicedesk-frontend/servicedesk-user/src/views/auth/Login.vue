@@ -189,7 +189,7 @@ async function handleLogin() {
     const success = await userStore.login(formData.value.email, formData.value.password)
     
     if (success) {
-      console.log('✅ Login successful:', userStore.currentUser)
+      console.log('Login successful:', userStore.currentUser)
       router.push('/dashboard')
     } else {
       globalError.value = 'Invalid email or password. Please try again.'
@@ -197,7 +197,7 @@ async function handleLogin() {
       errors.value.password = 'Invalid credentials'
     }
   } catch (error) {
-    console.error('❌ Login error:', error)
+    console.error('Login error:', error)
     globalError.value = 'Network error. Please check your connection and try again.'
   } finally {
     isLoading.value = false

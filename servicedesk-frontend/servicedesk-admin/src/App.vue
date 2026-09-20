@@ -6,9 +6,9 @@ import { useAdminStore } from './stores/adminStore'
 const adminStore = useAdminStore()
 
 onMounted(async () => {
-  console.log('🔄 Memuat data dari JSON Server...')
+  console.log('Memuat data dari JSON Server...')
   await adminStore.fetchData()
-  console.log('✅ Data berhasil dimuat:', {
+  console.log('Data berhasil dimuat:', {
     tickets: adminStore.tickets.length,
     users: adminStore.users.length,
     categories: adminStore.categories.length,

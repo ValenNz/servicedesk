@@ -6,9 +6,9 @@ import { useUserStore } from './stores/userStore'
 const userStore = useUserStore()
 
 onMounted(async () => {
-  console.log('🔄 Memuat data dari JSON Server...')
+  console.log('Memuat data dari JSON Server...')
   await userStore.fetchData()
-  console.log('✅ Data berhasil dimuat:', {
+  console.log('Data berhasil dimuat:', {
     tickets: userStore.tickets.length,
     users: userStore.users.length,
     categories: userStore.categories.length
