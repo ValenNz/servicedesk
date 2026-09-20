@@ -108,7 +108,7 @@ servicedesk/
 
 ---
 
-## 🛠️ Instalasi & Setup
+## Instalasi & Setup
 
 ### **Prerequisites**
 - PHP >= 8.1
@@ -231,7 +231,7 @@ Akses: `http://localhost:5174` (User)
 
 ---
 
-## 📊 Database Schema
+## Database Schema
 
 ### **MySQL Tables**
 
@@ -315,7 +315,7 @@ Akses: `http://localhost:5174` (User)
 
 ---
 
-## 🎮 Fitur Utama
+## Fitur Utama
 
 ### **1. Multi-Role Authentication**
 - Login berdasarkan role (Admin, Employee, User)

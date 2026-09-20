@@ -37,7 +37,7 @@ Sistem manajemen tiket layanan (Service Desk) yang dibangun menggunakan Laravel 
 
 ---
 
-## 🛠️ Instalasi & Setup
+##  Instalasi & Setup
 
 ### **1. Clone Repository**
 
@@ -159,7 +159,7 @@ brew services start mongodb-community
 
 ---
 
-## 🔧 Konfigurasi Tambahan
+##  Konfigurasi Tambahan
 
 ### **Setup MongoDB Driver untuk PHP**
 
@@ -234,7 +234,7 @@ Jika ingin mengembangkan API, endpoint yang tersedia:
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### **Error: "Column not found: file_name"**
 Jalankan migration tambahan:

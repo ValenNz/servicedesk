@@ -1,4 +1,4 @@
-# 🎫 Service Desk Application
+#  Service Desk Application
 
 Aplikasi Service Desk (Ticketing System) yang dibangun menggunakan **Vue 3 (Composition API)**, **Vite**, **Tailwind CSS**, dan **Pinia** untuk state management. Aplikasi ini memiliki pemisahan role yang jelas antara **Admin/Employee** dan **Regular User**, dengan backend mock menggunakan **JSON Server**.
 
@@ -12,7 +12,7 @@ Aplikasi Service Desk (Ticketing System) yang dibangun menggunakan **Vue 3 (Comp
 - **Icons**: Lucide Vue Next
 - **Backend (Mock)**: JSON Server
 
-## 📂 Struktur Proyek
+##  Struktur Proyek
 
 Proyek ini terdiri dari tiga bagian utama:
 ```text
@@ -30,7 +30,7 @@ Pastikan Anda telah menginstal:
 
 ---
 
-## 🛠️ Panduan Setup & Instalasi
+##  Panduan Setup & Instalasi
 
 Ikuti langkah-langkah berikut untuk menjalankan proyek di lingkungan lokal Anda. **Disarankan untuk membuka 3 terminal terpisah.**
 
@@ -64,7 +64,7 @@ npm install
 
 ---
 
-## ▶️ Cara Menjalankan Aplikasi
+## ▶ Cara Menjalankan Aplikasi
 
 Anda perlu menjalankan **3 proses secara bersamaan** di 3 terminal yang berbeda:
 
@@ -93,7 +93,7 @@ npm run dev
 
 ---
 
-## 🔑 Akun Demo (Default Credentials)
+##  Akun Demo (Default Credentials)
 
 Gunakan kredensial berikut untuk menguji fitur berdasarkan role:
 
@@ -107,9 +107,9 @@ Gunakan kredensial berikut untuk menguji fitur berdasarkan role:
 
 ---
 
-## ✨ Fitur Utama
+##  Fitur Utama
 
-### 🛡️ Admin & Employee (Port 5174)
+###  Admin & Employee (Port 5174)
 - **Dashboard**: Statistik keseluruhan tiket (Total, Open, In Progress, Resolved).
 - **Manajemen Tiket**: Melihat semua tiket, mengubah status, assign ke employee, dan menghapus tiket.
 - **Manajemen User**: Menambah, mengedit, dan menghapus akun user/employee.
@@ -124,7 +124,7 @@ Gunakan kredensial berikut untuk menguji fitur berdasarkan role:
 
 ---
 
-## ⚠️ Troubleshooting
+##  Troubleshooting
 
 1. **Port sudah digunakan (EADDRINUSE)**:
    Jika port 3000, 5173, atau 5174 sudah digunakan, hentikan proses yang berjalan di port tersebut atau ubah port di file konfigurasi (`vite.config.js` atau perintah `json-server`).
