@@ -2,7 +2,7 @@
 
 namespace App\Models\MongoDB;
 
-use MongoDB\Laravel\Eloquent\Model;  // ✅ Namespace yang benar
+use MongoDB\Laravel\Eloquent\Model;  //  Namespace yang benar
 
 class TicketHistory extends Model
 {

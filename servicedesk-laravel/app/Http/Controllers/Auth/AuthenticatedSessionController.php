@@ -30,7 +30,7 @@ class AuthenticatedSessionController extends Controller
         // 2. Regenerasi session untuk keamanan (mencegah session fixation)
         $request->session()->regenerate();
 
-        // 3. ✅ PERBAIKAN: Ambil data user yang baru saja login
+        // 3.  PERBAIKAN: Ambil data user yang baru saja login
         $user = $request->user();
 
         // 4. Cek role dan redirect ke halaman yang sesuai

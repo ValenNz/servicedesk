@@ -2,7 +2,7 @@
 
 Aplikasi Service Desk (Ticketing System) yang dibangun menggunakan **Vue 3 (Composition API)**, **Vite**, **Tailwind CSS**, dan **Pinia** untuk state management. Aplikasi ini memiliki pemisahan role yang jelas antara **Admin/Employee** dan **Regular User**, dengan backend mock menggunakan **JSON Server**.
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 - **Frontend Framework**: Vue 3 (Composition API, `<script setup>`)
 - **Build Tool**: Vite
@@ -116,7 +116,7 @@ Gunakan kredensial berikut untuk menguji fitur berdasarkan role:
 - **Manajemen Kategori**: Menambah dan mengelola kategori tiket.
 - **Activity Log**: Melacak semua aktivitas sistem secara real-time.
 
-### 👤 Regular User (Port 5173)
+###  Regular User (Port 5173)
 - **Dashboard Personal**: Statistik tiket yang dibuat atau di-assign ke user tersebut.
 - **Buat Tiket**: Form pembuatan tiket baru dengan pilihan kategori, prioritas, dan lampiran file.
 - **Daftar & Detail Tiket**: Melihat progres tiket dan memberikan balasan/komentar.
@@ -135,5 +135,5 @@ Gunakan kredensial berikut untuk menguji fitur berdasarkan role:
 
 ---
 
-## 📝 Lisensi
+##  Lisensi
 Proyek ini dibuat untuk tujuan seleksi CeLoe Staff 

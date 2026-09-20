@@ -2,7 +2,7 @@
 
 Sistem manajemen tiket layanan (Service Desk) yang dibangun menggunakan Laravel dengan arsitektur **multi-database** (MySQL + MongoDB).
 
-## 🚀 Fitur Utama
+##  Fitur Utama
 
 ### **Multi-Database Architecture**
 - **MySQL**: Untuk data terstruktur (Users, Tickets, Categories, Comments)
@@ -14,19 +14,19 @@ Sistem manajemen tiket layanan (Service Desk) yang dibangun menggunakan Laravel 
 - **User**: Buat tiket, lihat tiket sendiri, komentar
 
 ### **Fitur Ticketing**
-- ✅ Create, Read, Update, Delete tickets
-- ✅ Upload attachment (PDF, JPG, PNG, DOCX - max 5MB)
-- ✅ Assign ticket ke employee
-- ✅ Status tracking (Open → In Progress → Resolved → Closed)
-- ✅ Auto-close ticket (3 hari setelah Resolved)
-- ✅ Comment system dengan attachment
-- ✅ Activity log & ticket history
-- ✅ Search & filter tickets
-- ✅ Export activity log (CSV)
+-  Create, Read, Update, Delete tickets
+-  Upload attachment (PDF, JPG, PNG, DOCX - max 5MB)
+-  Assign ticket ke employee
+-  Status tracking (Open → In Progress → Resolved → Closed)
+-  Auto-close ticket (3 hari setelah Resolved)
+-  Comment system dengan attachment
+-  Activity log & ticket history
+-  Search & filter tickets
+-  Export activity log (CSV)
 
 ---
 
-## 📋 Persyaratan Sistem
+##  Persyaratan Sistem
 
 - **PHP** >= 8.1
 - **Composer**
@@ -198,7 +198,7 @@ Schedule::command('tickets:auto-close-resolved')->daily();
 
 ---
 
-## 📁 Struktur Database
+##  Struktur Database
 
 ### **MySQL Tables:**
 - `users` - User accounts (admin, employee, user)
@@ -212,7 +212,7 @@ Schedule::command('tickets:auto-close-resolved')->daily();
 
 ---
 
-## 🔐 Demo Credentials
+##  Demo Credentials
 
 | Role | Email | Password |
 |------|-------|----------|
@@ -267,6 +267,6 @@ Route::get('/activity/export', [ActivityController::class, 'export'])
 
 ---
 
-## 📄 License
+##  License
 
 Proyek ini dibuat untuk tujuan seleksi CeLoe Staff

@@ -600,7 +600,7 @@ async function validateTicket() {
     if (!localTicket.value.comments) localTicket.value.comments = []
     localTicket.value.comments.push({
       author: `${adminStore.currentUser?.name || 'Admin'} (Validation)`,
-      text: `✅ Validated: ${validationNotes.value}`,
+      text: ` Validated: ${validationNotes.value}`,
       time: 'Just now'
     })
   }
